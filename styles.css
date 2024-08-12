@@ -1,4 +1,8 @@
 body {
+    background-color: #111927;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(204.00, 43%, 18%)0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(217.14, 0%, 0%) 0, transparent 55%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6,7 +10,7 @@ body {
 }
 
 div {
-    background-color: lightblue;
+    color: white;
     width: 300px;
     padding: 20px;
     border-radius: 2%;
@@ -16,10 +20,19 @@ div {
     align-items: center;
 }
 
+.glass {
+    background: rgba(106, 106, 106, 0.25);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
 div img {
     top: -10px;
     left: -10px;
     width: 100px;
+    height: 75px;
     position: absolute;
     border-radius: 50%;
 }
